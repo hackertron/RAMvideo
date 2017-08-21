@@ -10,7 +10,7 @@ gem install flvtool2
 
 # Creating directory et get sources
 mkdir -p /home/http/clipbucket/ && cd "$_"
-git clone https://github.com/MacWarrior/clipbucket.git ./
+git clone https://github.com/hackertron/RAMvideo.git ./
 
 # Configuring Apache
 cat << 'EOF' > /etc/apache2/sites-available/001-clipbucket.conf
