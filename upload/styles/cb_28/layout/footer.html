@@ -37,7 +37,7 @@
 				{/if}
 			</div>
 			<div class="copyright-poweredby column">
-				<span>©ClipBucket, édité par MacWarrior</span>
+				<span>©RightAngleMedia</span>
 			</div>
 		</div>
 	</div><!-- end of custom-container -->
@@ -45,7 +45,7 @@
 <!-- cd-popup -->
 <div class="cd-popup" role="alert">
 	<div class="cb-popup-container clearfix">
-		<div class="modal-inset">	
+		<div class="modal-inset">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col my-modal-content"></div>
 		</div>
 	</div>
@@ -59,12 +59,12 @@
 		var lang_code = _this.data('lang');
 		var $currentLocation = window.location.href,
 		matchedElement = $currentLocation.match(/\?/);
-			  
+
 		if(matchedElement == null)
 		{
-			window.location = "?set_site_lang="+lang_code;    
+			window.location = "?set_site_lang="+lang_code;
 		} else {
-			window.location = window.location+"&set_site_lang="+lang_code;    
+			window.location = window.location+"&set_site_lang="+lang_code;
 		}
 	});
 
@@ -89,7 +89,7 @@
 			$('#cbsearch').trigger('click');
 		}
 	});
-	
+
 	jQuery(document).ready(function($){
 		//open popup
 		$(document).on('click','.cd-popup-trigger', function(event){
@@ -110,11 +110,11 @@
 			if(event.which=='27'){
 				var videoId = $(".my-modal-content").attr("id");
 				var cbPlayer = _cb.getPlayerEl(videoId);
-				
+
 				if (!$(cbPlayer).hasClass("vjs-fullscreen")){
 					$('.cd-popup').removeClass('is-visible');
 					$(".my-modal-content").html("");
-					var modalPlayerInterval = setInterval(function(){ 
+					var modalPlayerInterval = setInterval(function(){
 						var player = $(cbPlayer).find('video');
 						var isPlaying = !$(player)[0].paused;
 						if (isPlaying){
