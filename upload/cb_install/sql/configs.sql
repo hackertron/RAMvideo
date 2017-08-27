@@ -1,16 +1,16 @@
 -- Configurations
 
 INSERT INTO `{tbl_prefix}config` (`configid`, `name`, `value`) VALUES
-(1, 'site_title', 'ClipBucket v2'),
-(2, 'site_slogan', 'A way to broadcast yourself'),
+(1, 'site_title', 'RAMvideo v2'),
+(2, 'site_slogan', 'A way to host your own views'),
 (3, 'baseurl', ''),
 (4, 'basedir', ''),
 (5, 'template_dir', 'cb_28'),
 (6, 'player_file', 'cb_video_js.php'),
 (7, 'closed', '0'),
 (8, 'closed_msg', 'We Are Updating Our Website, Please Visit us after few hours.'),
-(9, 'description', 'Clip Bucket is an ultimate Video Sharing script'),
-(10, 'keywords', 'clip bucket video sharing website script'),
+(9, 'description', 'RAMvideo is  an ultimate Video Sharing script'),
+(10, 'keywords', 'video sharing website script'),
 (11, 'ffmpegpath', '/usr/local/bin/ffmpeg'),
 (12, 'flvtool2path', '/usr/local/bin/flvtool2'),
 (13, 'mp4boxpath', '/usr/local/bin/MP4Box'),
@@ -260,7 +260,7 @@ INSERT INTO `{tbl_prefix}config` (`configid`, `name`, `value`) VALUES (NULL, 'us
 (NULL, 'cached_pagin_time', '5');
 
 -- Addition for 2.7.4
-INSERT INTO `{tbl_prefix}config` (`configid`, `name`, `value`) VALUES (NULL, 'player_logo_url', 'http://clip-bucket.com/');
+INSERT INTO `{tbl_prefix}config` (`configid`, `name`, `value`) VALUES (NULL, 'player_logo_url', 'http://rightanglemedia.com/');
 
 -- Addition for 2.8
 INSERT INTO `{tbl_prefix}config` (`configid`, `name`, `value`) VALUES (NULL, 'cb_combo_res', 'no');
