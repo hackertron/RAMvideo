@@ -43,12 +43,7 @@ switch($mode)
 		);
 
 
-		/*if (isset($_POST['serverUrl'])) {
-			$serverUrl = $_POST['serverUrl'];
-			$thumbsUrl = $_POST['thumbsUrl'];
-			$vidDetails['serverUrl'] = $serverUrl;
-			$vidDetails['thumbsUrl'] = $thumbsUrl;
-		}*/
+		
 		
 		$vid = $Upload->submit_upload($vidDetails);
 		
