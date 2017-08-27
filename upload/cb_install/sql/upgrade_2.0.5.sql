@@ -3,7 +3,7 @@ INSERT INTO `{tbl_prefix}config` (
 `value`
 )
 VALUES
-('default_country_iso2', 'PK'),
+('default_country_iso2', 'IN'),
 ('channel_comments', '1'),
 ('max_profile_pic_size', '25'),
 ('max_profile_pic_height', ''),
