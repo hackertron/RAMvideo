@@ -63,13 +63,13 @@ switch($mode)
 
 		// insert the video info in the youtube_upload table
 
-		$query = "CREATE TABLE IF NOT EXISTS `ramvideo`.`youtube_upload` ( `title` TEXT NOT NULL , `description` TEXT NOT NULL , `tags` MEDIUMTEXT NOT NULL , `file_name` VARCHAR(32) NOT NULL , `file_directory` VARCHAR(25) NOT NULL , `upload` BOOLEAN NOT NULL default 0 ) ENGINE = InnoDB;";
+		$query = "INSERT INTO ". tbl("youtube_upload") . "(title, description, tags, file_name, file_directory, upload )
+		VALUES($vidDetails['title'] , $vidDetails['description'], $vidDetails['tags'], $vidDetails['file_name'], $vidDetails['file_directory'], 0)";
 
 		$db->Execute($query);
 
 		if (error()) {
-			# code...
-			echo "error in table creation ";
+			echo "insertion failed in youtube_upload table";
 		}
 
 
