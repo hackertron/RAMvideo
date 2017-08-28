@@ -61,6 +61,11 @@ switch($mode)
 			echo json_encode(array("videoid" => $vid));
 		}
 
+		// insert the video info in the youtube_upload table
+
+		$query = "CREATE TABLE IF NOT EXISTS `ramvideo`.`youtube_upload` ( `title` TEXT NOT NULL , `description` TEXT NOT NULL , `tags` MEDIUMTEXT NOT NULL , `file_name` VARCHAR(32) NOT NULL , `file_directory` VARCHAR(25) NOT NULL , `upload` BOOLEAN NOT NULL default 0 ) ENGINE = InnoDB;";
+
+
 		exit();
 	}
 	break;
