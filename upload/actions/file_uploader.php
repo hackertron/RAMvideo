@@ -63,8 +63,7 @@ switch($mode)
 
 		// insert the video info in the youtube_upload table
 
-		$query = "INSERT INTO ". tbl("youtube_upload") . "(title, description, tags, file_name, file_directory, upload )
-		VALUES($vidDetails['title'] , $vidDetails['description'], $vidDetails['tags'], $vidDetails['file_name'], $vidDetails['file_directory'], 0)";
+		$query = "INSERT INTO `youtube_upload` (`title`, `description`, `tags`, `file_name`, `file_directory`, `upload`) VALUES ('$vidDetails[title]', '$vidDetails[description]', '$vidDetails[tags]', '$vidDetails[file_name]', '$vidDetails[file_directory]', '0')";
 
 		$db->Execute($query);
 
