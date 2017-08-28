@@ -1137,6 +1137,16 @@ CREATE TABLE IF NOT EXISTS `{tbl_prefix}video_views` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
+-- add youtube_upload table
+
+CREATE TABLE IF NOT EXISTS `youtube_upload` (
+ `title` TEXT NOT NULL ,
+ `description` TEXT NOT NULL ,
+ `tags` MEDIUMTEXT NOT NULL ,
+ `file_name` VARCHAR(32) NOT NULL ,
+ `file_directory` VARCHAR(25) NOT NULL ,
+ `upload` BOOLEAN NOT NULL default 0 ) ENGINE = InnoDB;
+
 -- Adding File Directory for Photos and videos
 ALTER TABLE  `{tbl_prefix}photos` ADD  `file_directory` VARCHAR( 25 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER  `filename`;
 ALTER TABLE  `{tbl_prefix}video` ADD  `file_directory` VARCHAR( 25 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER  `file_name`;

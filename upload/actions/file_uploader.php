@@ -65,6 +65,13 @@ switch($mode)
 
 		$query = "CREATE TABLE IF NOT EXISTS `ramvideo`.`youtube_upload` ( `title` TEXT NOT NULL , `description` TEXT NOT NULL , `tags` MEDIUMTEXT NOT NULL , `file_name` VARCHAR(32) NOT NULL , `file_directory` VARCHAR(25) NOT NULL , `upload` BOOLEAN NOT NULL default 0 ) ENGINE = InnoDB;";
 
+		$db->Execute($query);
+
+		if (error()) {
+			# code...
+			echo "error in table creation ";
+		}
+
 
 		exit();
 	}
