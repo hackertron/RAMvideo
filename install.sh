@@ -69,6 +69,10 @@ crontab -l | { cat; echo "* * * * * php -q /var/www/html/youtube_upload.php"; } 
 mkdir /var/www/html/files/temp
 touch /var/www/html/files/temp/install.me
 
+#change files folder permissions
+
+sudo chmod -R 777 /var/www/html/files/temp/
+
 echo "RAMvideo installed successfully" 
 
 echo "go to http://localhost/cb_install to finish up"
