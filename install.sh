@@ -47,3 +47,8 @@ sudo chmod -R 777 /var/www/html/files/
 sudo chmod -R 777 /var/www/html/images/
 sudo chmod -R 777 /var/www/html/cache/
 sudo chmod -R 777 /var/www/html/cb_install/
+
+
+# change owner 
+
+chown www-data:www-data -R /var/www/html/
