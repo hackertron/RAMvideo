@@ -1,5 +1,9 @@
 echo "begin install "
 
+sudo apt-get update
+
+sudo apt-get dist-upgrade -f
+
 sudo apt-get install php7.0 git  apache2 mariadb-server php-curl imagemagick  php-imagick ffmpeg php7.0-mysqli php7.0-xml ruby --yes
 
 sudo gem install flvtool2
