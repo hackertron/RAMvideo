@@ -40,3 +40,10 @@ sudo service apache2 restart
 echo "copying source"
 cp -r RAMvideo/upload/* /var/www/html/
 cp RAMvideo/upload/.htaccess /var/www/html/
+
+#fix permissions 
+sudo chmod -R 777 /var/www/html/includes/
+sudo chmod -R 777 /var/www/html/files/
+sudo chmod -R 777 /var/www/html/images/
+sudo chmod -R 777 /var/www/html/cache/
+sudo chmod -R 777 /var/www/html/cb_install/
