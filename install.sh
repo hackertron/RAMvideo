@@ -31,3 +31,5 @@ sudo service apache2 restart
 
 # get source from git 
 git clone  https://github.com/hackertron/RAMvideo.git
+
+a2enmod rewrite
