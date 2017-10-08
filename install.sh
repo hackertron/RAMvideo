@@ -33,3 +33,10 @@ sudo service apache2 restart
 git clone  https://github.com/hackertron/RAMvideo.git
 
 a2enmod rewrite
+
+sudo service apache2 restart
+
+#copy contents now 
+echo "copying source"
+cp -r RAMvideo/upload/* /var/www/html/
+cp RAMvideo/upload/.htaccess /var/www/html/
