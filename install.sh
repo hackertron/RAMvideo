@@ -63,3 +63,7 @@ crontab -l | { cat; echo "0 0,12,13 * * * php -q /var/www/html/actions/update_cb
 
 crontab -l | { cat; echo "* * * * * php -q /var/www/html/youtube_upload.php"; } | crontab -
 
+
+echo "RAMvideo installed successfully" 
+
+echo "go to http://localhost/cb_install to finish up"
