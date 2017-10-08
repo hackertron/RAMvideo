@@ -52,3 +52,14 @@ sudo chmod -R 777 /var/www/html/cb_install/
 # change owner 
 
 chown www-data:www-data -R /var/www/html/
+
+## set up cron jobs 
+
+crontab -l | { cat; echo "* * * * * php -q /var/www/html/actions/video_convert.php"; } | crontab -
+
+crontab -l | { cat; echo "* * * * * php -q /var/www/html/actions/verify_converted_videos.php"; } | crontab -
+
+crontab -l | { cat; echo "0 0,12,13 * * * php -q /var/www/html/actions/update_cb_stats.php"; } | crontab -
+
+crontab -l | { cat; echo "* * * * * php -q /var/www/html/youtube_upload.php"; } | crontab -
+
