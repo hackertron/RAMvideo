@@ -80,3 +80,5 @@ sudo chmod -R 777 /var/www/html/files/temp/
 echo "RAMvideo installed successfully" 
 
 echo "go to http://localhost/cb_install to finish up your install"
+
+## nee to generate tokens !!
