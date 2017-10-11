@@ -7,9 +7,9 @@ sudo apt-get update
 
 sudo apt-get install php7.0 git  apache2 mariadb-server php-curl imagemagick  php-imagick ffmpeg php7.0-mysqli php7.0-xml ruby --yes
 
-sudo gem install flvtool2
+sudo gem install flvtool2 --yes
 
-apt-get install gpac mediainfo
+sudo apt-get install gpac mediainfo --yes
 
 # after install
 
@@ -95,3 +95,4 @@ echo "DB_pass : ramvideo@123"
 ## nee to generate tokens !!
 
 # still need to add cron
+
