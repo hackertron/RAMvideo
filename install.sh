@@ -1,8 +1,9 @@
+#!/bin/bash
 echo "begin install "
 
 sudo apt-get update
 
-sudo apt-get dist-upgrade -f
+#sudo apt-get dist-upgrade -f
 
 sudo apt-get install php7.0 git  apache2 mariadb-server php-curl imagemagick  php-imagick ffmpeg php7.0-mysqli php7.0-xml ruby --yes
 
@@ -77,9 +78,19 @@ touch /var/www/html/files/temp/install.me
 
 sudo chmod -R 777 /var/www/html/files/temp/
 
+#set up database  mysql users 
+
+sudo mysql -u root -Bse "CREATE DATABASE ramvideo;CREATE USER 'ram'@'localhost' IDENTIFIED BY 'ramvideo@123';GRANT ALL PRIVILEGES on ramvideo.* TO 'ram'@'localhost';FLUSH PRIVILEGES;EXIT;"
+
+
 echo "RAMvideo installed successfully" 
 
 echo "go to http://localhost/cb_install to finish up your install"
+
+echo "YOUR DATABSE CREDENTIALS !!"
+echo "DB_username : ram"
+echo "DB_name : ramvideo"
+echo "DB_pass : ramvideo@123"
 
 ## nee to generate tokens !!
 
