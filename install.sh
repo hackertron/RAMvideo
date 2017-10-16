@@ -7,6 +7,8 @@ sudo apt-get update
 
 sudo apt-get install php7.0 git  apache2 mariadb-server php-curl imagemagick  php-imagick ffmpeg php7.0-mysqli php7.0-xml ruby --yes
 
+sudo apt-get install libapache2-mod-php7.0
+
 sudo gem install flvtool2 --yes
 
 sudo apt-get install gpac mediainfo --yes
