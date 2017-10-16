@@ -20,15 +20,15 @@ sudo phpenmod imagick
 
 echo extension=imagick.so >> /etc/php/7.0/apache2/php.ini
 
-sed -i '809s/.*/upload_max_filesize = 500M/' /etc/php/7.0/apache2/php.ini
+sudo sed -i '809s/.*/upload_max_filesize = 500M/' /etc/php/7.0/apache2/php.ini
 
-sed -i '656s/.*/post_max_size = 100M/' /etc/php/7.0/apache2/php.ini
+sudo sed -i '656s/.*/post_max_size = 100M/' /etc/php/7.0/apache2/php.ini
 
-sed -i '389s/.*/memory_limit = 128M/' /etc/php/7.0/apache2/php.ini
+sudo sed -i '389s/.*/memory_limit = 128M/' /etc/php/7.0/apache2/php.ini
 
-sed -i '368s/.*/max_execution_time = 7200/' /etc/php/7.0/apache2/php.ini
+sudo sed -i '368s/.*/max_execution_time = 7200/' /etc/php/7.0/apache2/php.ini
 
-sed -i '389s/.*/memory_limit = 128M/' /etc/php/7.0/apache2/php.ini
+sudo sed -i '389s/.*/memory_limit = 128M/' /etc/php/7.0/apache2/php.ini
 
 echo magic_quotes_gpc = on >> /etc/php/7.0/apache2/php.ini
 echo magic_quotes_runtime = offloc >> /etc/php/7.0/apache2/php.ini
